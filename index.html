@@ -3,49 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
   <title>B.Pharm Entrepreneurship & Industry Integrated | Kerala Academy of Pharmacy</title>
+  <meta name="description" content="Join India's 1st Career-Focused B.Pharm Entrepreneurship & Industry Integrated program at Kerala Academy of Pharmacy (KAP). Get 100% placement support and real pharma industry exposure." />
+  <meta name="keywords" content="B.Pharm, Pharmacy College Kerala, B.Pharm Entrepreneurship, Pharmacy Admission Kerala, KAP, Kerala Academy of Pharmacy, Trivandrum Pharmacy College" />
+  <meta name="author" content="Kerala Academy of Pharmacy" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.yourdomain.com/" /> <meta property="og:type" content="website" />
+  <meta property="og:title" content="B.Pharm Entrepreneurship | Kerala Academy of Pharmacy" />
+  <meta property="og:description" content="India's first B.Pharm program blending industry immersion, mentorship, and 100% placement support. Graduate job-ready." />
+  <meta property="og:image" content="https://www.yourdomain.com/media/hero-student.png" /> <meta property="og:url" content="https://www.yourdomain.com/" />
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-  <!-- FontAwesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ══════════════════════════════
-     NAVBAR
-══════════════════════════════ -->
 <nav class="navbar">
   <div class="navbar-logo">
     <div class="logo-box">
-      <img src="media/KAPLogo1.png" alt="KAP Logo" class="logo-img" />
+      <img src="media/KAPLogo1.png" alt="Kerala Academy of Pharmacy Official Logo" class="logo-img" />
     </div>
     <div class="logo-text">
       <p>Kerala Academy of Pharmacy</p>
     </div>
   </div>
 
-  <button class="hamburger" id="hamburger">
+  <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
   <ul class="nav-links" id="nav-links">
-    <li><a href="#">Courses</a></li>
-    <li><a href="#">Why KAP</a></li>
-    <li><a href="#">Campus Life</a></li>
-    <li><a href="#">Admissions</a></li>
+    <li><a href="#" title="View our Courses">Courses</a></li>
+    <li><a href="#" title="Learn why students choose KAP">Why KAP</a></li>
+    <li><a href="#" title="Explore Campus Life">Campus Life</a></li>
+    <li><a href="#" title="Admission Information">Admissions</a></li>
   </ul>
 
   <div class="nav-right">
-    <span class="nav-phone"><i class="fa-solid fa-phone" style="color: var(--teal);"></i> +91 7736952425</span>
-    <a href="#" class="btn-apply">Apply Now</a>
+    <span class="nav-phone"><i class="fa-solid fa-phone" style="color: var(--teal);" aria-hidden="true"></i> +91 7736952425</span>
+    <a href="#" class="btn-apply" title="Apply Now to KAP">Apply Now</a>
   </div>
 </nav>
 
-<!-- ══════════════════════════════
-     HERO
-══════════════════════════════ -->
 <section class="hero">
   <div class="hero-content">
     <span class="hero-badge">Built for Career-Focused B.Pharm</span>
@@ -77,76 +80,70 @@
       <h3>Enquire Now</h3>
       <p>Get course details, fees &amp; placement info.</p>
       <div class="form-row">
-        <input type="text" placeholder="Full Name*" />
+        <input type="text" name="fullname" placeholder="Full Name*" required />
       </div>
       <div class="form-row">
-        <input type="email" placeholder="Email*" />
-        <input type="tel" placeholder="Phone*" />
+        <input type="email" name="email" placeholder="Email*" required />
+        <input type="tel" name="phone" placeholder="Phone*" required />
       </div>
-      <select>
-        <option>Select Course*</option>
-        <option>B.Pharm Entrepreneurship</option>
-        <option>B.Pharm Industry Integrated</option>
+      <select name="course" aria-label="Select Course">
+        <option value="">Select Course*</option>
+        <option value="entrepreneurship">B.Pharm Entrepreneurship</option>
+        <option value="industry_integrated">B.Pharm Industry Integrated</option>
       </select>
-      <select>
-        <option>Select Source</option>
-        <option>Google</option>
-        <option>Social Media</option>
-        <option>Friend / Referral</option>
+      <select name="source" aria-label="How did you hear about us">
+        <option value="">Select Source</option>
+        <option value="google">Google</option>
+        <option value="social">Social Media</option>
+        <option value="referral">Friend / Referral</option>
       </select>
       <div class="form-row">
-        <select>
-          <option>Select State</option>
-          <option>Kerala</option>
-          <option>Karnataka</option>
-          <option>Tamil Nadu</option>
+        <select name="state" aria-label="Select State">
+          <option value="">Select State</option>
+          <option value="kerala">Kerala</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="tamilnadu">Tamil Nadu</option>
         </select>
-        <input type="text" placeholder="City" />
+        <input type="text" name="city" placeholder="City" />
       </div>
-      <textarea placeholder="Your query (optional)"></textarea>
-      <button class="btn-submit">Submit Enquiry</button>
-      <p class="form-note"><i class="fa-solid fa-lock"></i> Your details are safe with us. We never spam.</p>
+      <textarea name="query" placeholder="Your query (optional)"></textarea>
+      <button type="submit" class="btn-submit">Submit Enquiry</button>
+      <p class="form-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> Your details are safe with us. We never spam.</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     AFFILIATIONS
-══════════════════════════════ -->
 <section class="affiliations">
   <p class="affiliations-label">Recognised, Affiliated &amp; Approved by</p>
   <div class="affil-logos">
     <div class="affil-item">
-      <div class="affil-icon">KU</div>
+      <div class="affil-icon" aria-hidden="true">KU</div>
       <div class="affil-title">Affiliated to</div>
       <div class="affil-label">Kerala University of Health Sciences (KUHs)</div>
     </div>
     <div class="affil-item">
-      <div class="affil-icon">PCI</div>
+      <div class="affil-icon" aria-hidden="true">PCI</div>
       <div class="affil-title">Approved by</div>
       <div class="affil-label">Pharmacy Council of India (PCI)</div>
     </div>
     <div class="affil-item">
-      <div class="affil-icon">ME</div>
+      <div class="affil-icon" aria-hidden="true">ME</div>
       <div class="affil-title">Approved by</div>
       <div class="affil-label">Directorate of Medical Education (DME), Govt. of Kerala</div>
     </div>
     <div class="affil-item">
-      <div class="affil-icon">AI</div>
+      <div class="affil-icon" aria-hidden="true">AI</div>
       <div class="affil-title">Affiliated to</div>
       <div class="affil-label">All India Council for Technical Education (AICTE)</div>
     </div>
     <div class="affil-item">
-      <div class="affil-icon">SP</div>
+      <div class="affil-icon" aria-hidden="true">SP</div>
       <div class="affil-title">Affiliated to</div>
       <div class="affil-label">Kerala State Pharmacy Council</div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     COURSES
-══════════════════════════════ -->
 <section class="section" style="background:#fff;">
   <p class="section-label">Courses Offered</p>
   <h2 class="section-title">Choose the program that shapes your future</h2>
@@ -157,11 +154,10 @@
 
   <div class="courses-grid">
 
-    <!-- Card 1: Entrepreneurship -->
     <div class="course-card popular">
-      <span class="badge-popular"><i class="fa-solid fa-fire"></i> Most Popular</span>
+      <span class="badge-popular"><i class="fa-solid fa-fire" aria-hidden="true"></i> Most Popular</span>
       <div class="course-icon-wrap">
-        <div class="course-icon orange"><i class="fa-solid fa-rocket"></i></div>
+        <div class="course-icon orange"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
         <div>
           <h4>B.Pharm Entrepreneurship</h4>
           <p class="tagline">Built for industry-first, real pharma exposure.</p>
@@ -178,13 +174,12 @@
         <li>Entrepreneurship Training</li>
         <li>AI Mandatory Internship</li>
       </ul>
-      <a href="#" class="btn-course orange">Apply for this course <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+      <a href="#" class="btn-course orange" title="Apply for B.Pharm Entrepreneurship">Apply for this course <i class="fa-solid fa-arrow-right" style="margin-left: 4px;" aria-hidden="true"></i></a>
     </div>
 
-    <!-- Card 2: Industry Integrated -->
     <div class="course-card">
       <div class="course-icon-wrap">
-        <div class="course-icon"><i class="fa-solid fa-industry"></i></div>
+        <div class="course-icon"><i class="fa-solid fa-industry" aria-hidden="true"></i></div>
         <div>
           <h4>B.Pharm Industry Integrated</h4>
           <p class="tagline">Graduate with deep industry innovation skills.</p>
@@ -204,18 +199,15 @@
         <li>DIT &amp; Mandatory Internship</li>
         <li>Applied Learning Program (AP)</li>
       </ul>
-      <a href="#" class="btn-course teal">Apply for this course <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+      <a href="#" class="btn-course teal" title="Apply for B.Pharm Industry Integrated">Apply for this course <i class="fa-solid fa-arrow-right" style="margin-left: 4px;" aria-hidden="true"></i></a>
     </div>
 
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     WHY KAP
-══════════════════════════════ -->
 <section class="why-kap-section">
   <div class="why-kap-img-wrap">
-    <img src="media/hero-student.png" alt="Why KAP Student" class="why-kap-img" />
+    <img src="media/hero-student.png" alt="Pharmacy student at Kerala Academy of Pharmacy" class="why-kap-img" />
   </div>
   <div class="why-kap-content">
     <p class="why-label">Why Students Choose KAP</p>
@@ -243,15 +235,12 @@
       </div>
     </div>
     <div class="why-btns">
-      <button class="btn-outline-white"><i class="fa-regular fa-comment-dots"></i> Talk to an Expert</button>
-      <button class="btn-outline-white"><i class="fa-solid fa-phone"></i> Call Us</button>
+      <button class="btn-outline-white"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i> Talk to an Expert</button>
+      <button class="btn-outline-white"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Us</button>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     LIFE AT KAP
-══════════════════════════════ -->
 <section class="life-section">
   <p class="section-label">Life at KAP</p>
   <h2 class="section-title">Where learning meets real experience</h2>
@@ -261,39 +250,33 @@
   </p>
   
   <div class="life-grid">
-    <!-- Card 1 -->
     <div class="life-card">
-      <img src="media/gallery-industry.jpg" alt="Industrial Visits" class="life-img" />
-      <span class="life-icon"><i class="fa-solid fa-industry"></i></span>
+      <img src="media/gallery-industry.jpg" alt="Students on Pharmaceutical Industrial Visits" class="life-img" />
+      <span class="life-icon"><i class="fa-solid fa-industry" aria-hidden="true"></i></span>
       <div class="life-label-overlay">Industrial Visits</div>
     </div>
     
-    <!-- Card 2 -->
     <div class="life-card">
-      <img src="media/gallery-lab.jpg" alt="Hands-on Lab Training" class="life-img" />
-      <span class="life-icon"><i class="fa-solid fa-microscope"></i></span>
+      <img src="media/gallery-lab.jpg" alt="Pharmacy students doing Hands-on Lab Training" class="life-img" />
+      <span class="life-icon"><i class="fa-solid fa-microscope" aria-hidden="true"></i></span>
       <div class="life-label-overlay">Hands-on Lab Training</div>
     </div>
     
-    <!-- Card 3 (Tall) -->
     <div class="life-card tall">
-      <img src="media/gallery-graduation.jpg" alt="Graduation & Campus Life" class="life-img" />
-      <span class="life-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+      <img src="media/gallery-graduation.jpg" alt="Kerala Academy of Pharmacy Graduation Ceremony" class="life-img" />
+      <span class="life-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
       <div class="life-label-overlay">Graduation &amp; Campus Life</div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     TESTIMONIALS
-══════════════════════════════ -->
 <section class="testimonials-section">
   <p class="section-label">Voices from Our Students</p>
   <h2 class="section-title">Because their journey speaks for itself</h2>
   <div class="testimonials-grid">
 
     <div class="testimonial-card">
-      <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
       <p class="testimonial-text">
         The industry exposure changed everything for me. I landed my first job
         directly knowing how real pharma manufacturing works.
@@ -303,7 +286,7 @@
     </div>
 
     <div class="testimonial-card">
-      <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
       <p class="testimonial-text">
         Entrepreneurship study gave me the confidence to launch my own wellness
         venture right after graduation.
@@ -313,7 +296,7 @@
     </div>
 
     <div class="testimonial-card">
-      <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <div class="quote-icon"><i class="fa-solid fa-quote-left" aria-hidden="true"></i></div>
       <p class="testimonial-text">
         The placement preparation and placement support — I had a job offer in
         hand before my final semester ended!
@@ -325,9 +308,6 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     BOTTOM CTA
-══════════════════════════════ -->
 <section class="cta-section">
   <div class="cta-content">
     <span class="cta-badge">Ready to Rewrite Your Future?</span>
@@ -352,47 +332,44 @@
       <p class="form-tag">Admissions Open</p>
       <h3>Enquire Now</h3>
       <p>Get course details, fees &amp; placement info.</p>
-      <input type="text" placeholder="Full Name*" />
+      <input type="text" name="fullname" placeholder="Full Name*" required />
       <div class="form-row">
-        <input type="email" placeholder="Email*" />
-        <input type="tel" placeholder="Phone*" />
+        <input type="email" name="email" placeholder="Email*" required />
+        <input type="tel" name="phone" placeholder="Phone*" required />
       </div>
-      <select>
-        <option>Select Course*</option>
-        <option>B.Pharm Entrepreneurship</option>
-        <option>B.Pharm Industry Integrated</option>
+      <select name="course" aria-label="Select Course">
+        <option value="">Select Course*</option>
+        <option value="entrepreneurship">B.Pharm Entrepreneurship</option>
+        <option value="industry_integrated">B.Pharm Industry Integrated</option>
       </select>
       <div class="form-row">
-        <select>
-          <option>Select Stream</option>
-          <option>Science</option>
-          <option>Commerce</option>
+        <select name="stream" aria-label="Select Stream">
+          <option value="">Select Stream</option>
+          <option value="science">Science</option>
+          <option value="commerce">Commerce</option>
         </select>
-        <select>
-          <option>Select State</option>
-          <option>Kerala</option>
-          <option>Karnataka</option>
-          <option>Tamil Nadu</option>
+        <select name="state" aria-label="Select State">
+          <option value="">Select State</option>
+          <option value="kerala">Kerala</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="tamilnadu">Tamil Nadu</option>
         </select>
       </div>
-      <input type="text" placeholder="City" />
-      <textarea placeholder="Your query (optional)"></textarea>
-      <button class="btn-submit">Submit Enquiry</button>
-      <p class="form-note"><i class="fa-solid fa-lock"></i> Your details are safe with us. We never spam.</p>
+      <input type="text" name="city" placeholder="City" />
+      <textarea name="query" placeholder="Your query (optional)"></textarea>
+      <button type="submit" class="btn-submit">Submit Enquiry</button>
+      <p class="form-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> Your details are safe with us. We never spam.</p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════
-     FOOTER
-══════════════════════════════ -->
 <footer class="footer">
   <div class="footer-grid">
 
     <div>
       <div class="footer-logo">
         <div class="logo-box">
-            <img src="media/KAPLogo1.png" alt="KAP Logo" class="logo-img" />
+            <img src="media/KAPLogo1.png" alt="Kerala Academy of Pharmacy Official Logo" class="logo-img" />
         </div>
         <div class="footer-logo-text">
           <strong>Kerala Academy of Pharmacy</strong>
@@ -408,18 +385,18 @@
     <div class="footer-col">
       <h5>Explore</h5>
       <ul>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Why KAP</a></li>
-        <li><a href="#">Campus Life</a></li>
-        <li><a href="#">Admissions</a></li>
-        <li><a href="#">News</a></li>
+        <li><a href="#" title="View our Courses">Courses</a></li>
+        <li><a href="#" title="Learn why students choose KAP">Why KAP</a></li>
+        <li><a href="#" title="Explore Campus Life">Campus Life</a></li>
+        <li><a href="#" title="Admission Information">Admissions</a></li>
+        <li><a href="#" title="Latest News">News</a></li>
       </ul>
     </div>
 
     <div class="footer-col footer-contact">
       <h5>Get in Touch</h5>
-      <p><span class="icon"><i class="fa-solid fa-location-dot"></i></span> Kandala, Near Kattakada, Trivandrum – 695512, Kerala</p>
-      <p><span class="icon"><i class="fa-solid fa-phone"></i></span> +91 7738052621</p>
+      <p><span class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span> Kandala, Near Kattakada, Trivandrum – 695512, Kerala</p>
+      <p><span class="icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span> +91 7738052621</p>
     </div>
 
   </div>
@@ -427,14 +404,42 @@
     © 2026 Kerala Academy of Pharmacy. All rights reserved.
   </div>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "Kerala Academy of Pharmacy",
+  "description": "India's first B.Pharm Entrepreneurship & Industry Integrated program blending industry immersion, mentorship and placement support.",
+  "address": {
+    "streetAddress": "Kandala, Near Kattakada",
+    "addressLocality": "Trivandrum",
+    "addressRegion": "Kerala",
+    "postalCode": "695512",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-7738052621",
+}
+</script>
+
 <script>
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
+  const navbar = document.querySelector('.navbar');
 
   // Add a click event to toggle the 'active' classes
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
+  });
+
+  // Navbar Scroll Effect (Transparent to Solid)
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
   });
 </script>
 </body>

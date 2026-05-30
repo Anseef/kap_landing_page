@@ -622,10 +622,11 @@ ul { list-style: none; }
   .hero h1 { font-size: 28px; }
   .enquiry-form h3 { font-size: 22px; }
   .btn-submit { padding: 14px; font-size: 14px; }
-  .navbar { padding: 10px 12px; }
+  .navbar { padding: 10px 12px; padding-left: 12px !important; 
+    padding-right: 8px !important; }
   .navbar-logo .logo-box { width: 36px; height: 36px; } /* Slightly smaller logo */
   .btn-apply { padding: 6px 10px; font-size: 11px; }
-  .hamburger { margin-left: 8px; }
+  .hamburger { margin-left: 8px; margin-right: 0 !important; }
 
   /* Reduce overall padding on ultra-small screens to maximize screen real estate */
   .section, .why-kap-section, .life-section, .testimonials-section, .cta-section, .hero { 

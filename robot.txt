@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Point search engines to your sitemap (Update with your actual domain)
+Sitemap: https://kap-landing-page.vercel.app/sitemap.xml
